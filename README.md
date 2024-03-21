@@ -21,10 +21,10 @@ This project aims to develop a handwritten math equation solver application. The
 ## Model
 
 #### MobileNetV3
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/RF-UV-11/Handwritten-Math-Equation-Solver/blob/main/Handwritten-Math-Equation-Solver/Images/MobileNetV3.png)
 
 #### Custom Final CNN 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/RF-UV-11/Handwritten-Math-Equation-Solver/blob/main/Handwritten-Math-Equation-Solver/Images/CNN_Model_EMNIST.png)
 ## Segmentizer
 
 The `image_segmentation` function provided here serves as a crucial component of the handwritten math equation solver project. It performs the segmentation of handwritten text from input images, enabling the extraction of individual characters for further processing and recognition.
