@@ -12,7 +12,45 @@ Handwritten Math Equation Solver
 
 This project aims to develop a handwritten math equation solver application. The application takes handwritten math equations as input, processes them using image segmentation and deep learning models, and returns the solved equation. The project primarily utilizes the EMNIST dataset for character recognition and a custom dataset of images for math symbols.
 ## Roadmap
-![App Screenshot](https://github.com/RF-UV-11/Handwritten-Math-Equation-Solver/blob/main/Handwritten-Math-Equation-Solver/Images/Roadmap.png)
+![RoadMap](https://github.com/RF-UV-11/Handwritten-Math-Equation-Solver/blob/main/Handwritten-Math-Equation-Solver/Images/Roadmap.png)
+
+1. **Problem Identification:**
+   - Recognize the challenge of solving handwritten math expressions, necessitating accurate character recognition to decipher equations effectively.
+
+2. **Handwritten Character Recognition:**
+   - Employ the ``EMNIST dataset``, covering both handwritten alphabets and digits, as it provides a comprehensive foundation for character recognition.
+   - Develop a custom CNN model, ensuring high accuracy (``99.4%``), which is crucial for precise identification of handwritten characters in math expressions.
+
+   ![Handwritten Character Recognition](https://github.com/RF-UV-11/Handwritten-Math-Equation-Solver/blob/main/Handwritten-Math-Equation-Solver/Images/Screenshot%202024-03-21%20170451.png)
+
+3. **Math Symbol Dataset Integration:**
+   - Incorporate images of math symbols (e.g., ``"+", "-", "(", ")"``) to expand recognition capabilities beyond characters.
+   - Merge datasets into various formats ([`image`](https://www.kaggle.com/datasets/yuvrajjoshi1110/balanced-emnist-maths-symbol-dataset), [`CSV`](https://www.kaggle.com/datasets/yuvrajjoshi1110/shuffled-digit-char-symbol-merged-dataset) , `idx3 ubyte`) for flexibility, enabling users to choose the format that best suits their requirements.
+
+4. **Modeling:**
+   - Initially explore [`MobileNetV3 small model`](https://github.com/RF-UV-11/Handwritten-Math-Equation-Solver/blob/main/Handwritten-Math-Equation-Solver/mobilenetv3-handwritten-char-math-symbol-recotion.ipynb) for its efficiency and speed, achieving moderate accuracy (`84-90%`) suitable for preliminary testing.
+
+   - Further refine modeling with a [`Custom CNN`](https://github.com/RF-UV-11/Handwritten-Math-Equation-Solver/blob/main/Handwritten-Math-Equation-Solver/handwritten-char-math-symbol-cnn.ipynb) approach, achieving superior accuracy (``97% training, 93% testing``) necessary for robust recognition in diverse handwriting styles.
+    ![Handwritten Character Math Symbol Recognition Training](https://github.com/RF-UV-11/Handwritten-Math-Equation-Solver/blob/main/Handwritten-Math-Equation-Solver/Images/Screenshot%202024-03-21%20170714.png)
+
+    ![Handwritten Character Math Symbol Recognition Loss](https://github.com/RF-UV-11/Handwritten-Math-Equation-Solver/blob/main/Handwritten-Math-Equation-Solver/Images/Screenshot%202024-03-21%20170725.png)
+
+
+5. **Deployment for Equation Solving:**
+   - Implement segmentation to isolate individual characters within handwritten equations, facilitating accurate character recognition.
+   - Utilize trained models to predict characters, enabling the translation of handwritten equations into digital format.
+
+6. **Equation Solving with Wolfram Alpha:**
+   - Integrate ``Wolfram Alpha`` for its comprehensive computational capabilities, enabling accurate and efficient solution generation for predicted equations.
+   - Provide an alternative custom logic option for equation solving, allowing flexibility based on user preferences or specific requirements.
+
+7. **Future Work - Flutter Application Development:**
+   - Develop a ``Flutter application`` to enhance user accessibility and interaction with the handwritten math equation solver.
+   - Leverage Flutter's cross-platform compatibility and intuitive UI framework to create a seamless user experience.
+   - Integrate backend functionalities for image processing and communication with Wolfram Alpha or custom equation solving logic, ensuring efficient and reliable equation solving capabilities.
+   - Enhance user experience with ``real-time feedback`` and ``error handling`` features, optimizing usability and reliability of the application.
+
+
 ## Dataset
 #### [EMNIST](https://www.kaggle.com/datasets/crawford/emnist)
 #### [MATH SYMBOL](https://www.kaggle.com/datasets/yuvrajjoshi1110/math-symbol/code)
