@@ -12,7 +12,7 @@ Handwritten Math Equation Solver
 
 This project aims to develop a handwritten math equation solver application. The application takes handwritten math equations as input, processes them using image segmentation and deep learning models, and returns the solved equation. The project primarily utilizes the EMNIST dataset for character recognition and a custom dataset of images for math symbols.
 ## Roadmap
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/RF-UV-11/Handwritten-Math-Equation-Solver/blob/main/Handwritten-Math-Equation-Solver/Images/Roadmap.png)
 ## Dataset
 #### [EMNIST](https://www.kaggle.com/datasets/crawford/emnist)
 #### [MATH SYMBOL](https://www.kaggle.com/datasets/yuvrajjoshi1110/math-symbol/code)
